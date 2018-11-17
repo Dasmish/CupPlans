@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
+@font-face {
+  font-family: "Miso";
+  src: url(../fonts/miso.ttf) format(ttf), url(../fonts/miso.woff) format(woff); }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .4s ease-in;
+  -o-transition: all .4s ease-in;
+  transition: all .4s ease-in; }
+
+html {
+  font-size: 10px;
+  height: 100%; }
+
+body {
+  min-height: 100%;
+  font-size: 1.6rem;
+  font-family: 'Miso', sans-serif;
+  color: #333333;
+  background-color: #fdde7e; }
+
+.container {
+  margin: 0 auto;
+  max-width: 1400px; }
+
+.cups {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  text-align: center; }
+  .cups a {
+    color: #333333;
+    text-decoration: none; }
+  .cups__plain {
+    width: 350px;
+    background-color: #fff;
+    border-radius: 7px;
+    -webkit-box-shadow: 2px 2px 23px -4px rgba(0, 0, 0, 0.77);
+    box-shadow: 2px 2px 23px -4px rgba(0, 0, 0, 0.77); }
+    .cups__plain--large {
+      padding-top: 50px;
+      padding-bottom: 50px; }
+    .cups__plain:hover {
+      -webkit-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+      -o-transform: scale(1.3);
+      transform: scale(1.3);
+      -webkit-box-shadow: 0px 2px 64px 5px rgba(0, 0, 0, 0.75);
+      box-shadow: 0px 2px 64px 5px rgba(0, 0, 0, 0.75); }
+  .cups__price {
+    font-family: Miso;
+    font-size: 7rem;
+    color: #02995b;
+    padding-top: 40px; }
+    .cups__price:before {
+      content: attr(data-price); }
+  .cups__img {
+    padding: 25px 0 40px 0; }
+  .cups__name {
+    font-family: 'Miso';
+    font-weight: bold;
+    font-size: 5.6rem; }
+  .cups__desc {
+    font-size: 2rem;
+    font-family: Lato;
+    font-weight: 300;
+    padding: 40px 0; }
